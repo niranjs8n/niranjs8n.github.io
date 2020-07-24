@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Measuring Service Availability | Niranj Srinivasan</title>
+    <meta name="description" content="Personal blog covering technology, photography and travel from Niranj Srinivasan">
+    <meta name="author" content="Niranj Srinivasan"/>
+    <link rel="stylesheet" href="/css/style.css?1571009532794">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<img src="/photos/logo.JPG" alt="Niranj Srinivasan" width="256" height="256">
+<div class="nav">
+  <a href="index.html" title="Home">Home</a>
+  <img height="20" width="20" name="location" src="/icons/pin.png" />
+  <a href="photos.html" title="Photography">Photography</a>
+  <a href="about.html" title="About">About</a>
+</div>    
+<div class="container">
+  <p align="justify">
+    <span class="light margin left" style="color:blue">Measuring Service Availability</span>
+    Availability can generally be described as the actual time your service is accessible i.e up and ready to serve customer requests.
+  </p>
+  <br />
+  <p align="justify">
+    This is different from 'uptime' which is a system reliability metric i.e. actual time your server is up and powered on and available for system administration. The server may be up and running but the service(s) may still be unavailable so uptime is not a good measure of service availability.
+  </p>
+  <br />
+  <p align="justify">
+    Lets say for the past month your service had 5 outage incidents causing a total outage of 12 hours. How do you calculate your service availability?
+  </p>
+  <br />
+  <p align="justify">
+    We start by calculating the Mean Time To Failure (MTTF) which is the average time between one security incident to next. <br/>
+    <img src="/photos/mttf.jpg" alt="Mean time to failure" width="600" height="600" />
+  </p>
+  <br />
+  <p align="justify">
+    Next we calculate the Mean Time To Recovery (MTTR) which is the average time to resolve an outage and restore service(s) back to customers. <br/>
+    <img src="/photos/mttr.jpg" alt="Mean time to recovery" width="720" height="720" />
+  </p>
+  <br />
+  <p align="justify">
+    Once we have the above numbers, we can calculate Availability as shown below. <br/>
+    <img src="/photos/availability.jpg" alt="Mean time to recovery" width="720" height="720" />
+  </p>
+  <p align="justify">
+    Availability is a key performance indicator to track on a weekly/monthly basis. <br/>
+  </p>
+</div>
+<script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151354692-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151354692-1');
+</script>
+</body>
+</html>
